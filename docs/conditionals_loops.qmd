@@ -1,0 +1,84 @@
+---
+title: "day3-tasks"
+author: "Jaslyn Miura"
+format: html
+---
+
+```{r}
+
+# task 1
+
+pm2_5 <- 120
+
+if (pm2_5 < 100) {
+  print("Low to moderate risk")
+} else if (pm2_5 >= 100 & pm2_5 < 150) {
+  print("Unhealthy for sensitive groups")
+} else (pm2_5 >= 150) 
+  print("Health risk present")
+
+
+```
+
+```{r}
+
+# task 2
+
+library(stringr)
+
+species <- "shark"
+
+if (str_detect(species,  "whale")) {
+  print("You found a whale!")
+}
+
+```
+
+
+```{r}
+
+# task 3
+
+base_burrito <- 6.50
+
+main_ingredient <- "chicken"
+
+if (main_ingredient == "veggie") {
+  print(base_burrito)
+} else if (main_ingredient == "chicken") {
+  print(base_burrito + 3)
+} else (main_ingredient == "steak")
+  print(base_burrito + 3.25)
+
+
+```
+
+
+```{r}
+
+# task 4
+
+fish <- c(8, 10, 12, 23)
+
+fish_prop <- vector(mode = "numeric", length = length(fish))
+
+for (i in 1:length(fish)) {
+  fish_prop[i] <- fish[i] / sum(fish) 
+}
+
+print(fish_prop)
+
+```
+
+```{r}
+
+# task 5
+
+for (i in 1:length(month.name)) {
+  print(paste(month.name[i], "is month" ))
+}
+
+```
+
+
+
